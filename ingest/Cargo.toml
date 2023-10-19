@@ -1,0 +1,20 @@
+[package]
+name = "ingest"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.74"
+chrono = { version = "0.4.31", features = ["serde"] }
+dotenv = "0.15.0"
+elasticsearch = { version = "8.5.0-alpha.1", features = ["rustls-tls"] }
+fake = { version = "2.8.0", features = ["derive", "chrono"] }
+futures = "0.3.28"
+indicatif = "0.17.7"
+reqwest = "0.11.22"
+serde = "1.0.188"
+serde_json = "1.0.107"
+tokio = { version = "1.33.0", features = ["full"] }
+url = "2.4.1"
